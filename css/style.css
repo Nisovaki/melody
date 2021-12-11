@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('../fonts/BebasNeuePro-Regular.eot');
+    src: local('Bebas Neue Pro'),
+        url('../fonts/BebasNeuePro-Regular.eot') format('embedded-opentype'),
+        url('../fonts/BebasNeuePro-Regular.woff2') format('woff2'),
+        url('../fonts/BebasNeuePro-Regular.woff') format('woff'),
+        url('../fonts/BebasNeuePro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 *{
    box-sizing: border-box;
 }
@@ -44,7 +58,7 @@ body {
    display: block;
    color: #ffffff;
    margin-bottom: 4px;
-   font-size: 17px;
+   font-size: 14px;
 }
 
 .navbar-phone {
@@ -53,4 +67,65 @@ body {
    line-height: 20px;
    text-decoration: none;
    color: #ffffff;
+}
+
+.main {
+   display: flex;
+   max-width: 1260px;
+   margin: 0 auto;
+   margin-top: 56px;
+}
+
+.main-info {
+   margin: 68px 0 67px 37px;
+   flex-grow: 1;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.home-image path {
+   opacity: 0;
+   cursor: pointer;
+}
+
+.home-image path:hover{
+   opacity: 1;
+}
+
+.counter-group {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.counter-button {
+   cursor: pointer;
+   background-color: #fff;
+   border: none;
+}
+
+.main-title {
+   margin: 0;
+   font-family: 'Bebas Neue Pro', sans-serif;
+   font-size: 37px;
+   line-height: 37px;
+   color: #635854;
+}
+
+.counter {
+   color: #635854;
+   font-family: 'Bebas Neue Pro', sans-serif;
+   font-size: 75px;
+}
+
+.button-primary {
+   background: #3596F5;
+   border-radius: 6px;
+   color: #fff;
+   border: none;
+   padding: 16px 36px;
+   cursor: pointer;
 }
