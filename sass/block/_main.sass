@@ -1,0 +1,55 @@
+.main 
+   display: flex
+   max-width: 1260px
+   margin: 0 auto
+   margin-top: 56px
+   margin-bottom: 99px
+   &-info 
+      margin: 68px 0 67px 37px
+      flex-grow: 1
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+   &-title 
+      margin: 0
+      font-family: 'Bebas Neue Pro', sans-serif
+      font-size: 37px
+      line-height: 37px
+      color: $brown-color
+      text-transform: uppercase
+      transform: scale(0.8, 1)
+
+.home-image path 
+   opacity: 0
+   cursor: pointer
+   &:hover
+      opacity: 1
+
+.counter
+   color: $brown-color
+   font-family: 'Bebas Neue Pro', sans-serif
+   font-size: 100px
+   font-weight: bold
+   transform: scale(0.8, 1)
+   &-group 
+      display: flex
+      flex-direction: column
+      align-items: center
+   &-button 
+      cursor: pointer
+      background-color: $white-color
+      border: none
+
+.button
+   &-primary 
+      background: $blue-color
+      border-radius: 6px
+      color: $white-color
+      border: none
+      padding: 16px 36px
+      cursor: pointer
+
+path.current-floor
+   opacity: 1
